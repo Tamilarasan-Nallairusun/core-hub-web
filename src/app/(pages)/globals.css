@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: #E9F5DB;
+  --color-primary: #97A97C;
+  --color-secondary: #B5C99A;
+  --color-accent: #CFE1B9;
+  --color-foreground: #87986A;
+  --color-dark: #718355;
+}
+
+/* Dark Mode */
+.dark {
+  --color-background: #718355;
+  --color-primary: #87986A;
+  --color-secondary: #97A97C;
+  --color-accent: #B5C99A;
+  --color-foreground: #CFE1B9;
+  --color-dark: #E9F5DB;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.primary-border {
+  border-top-color: var(--color-primary);
+}
+
+.text-primary{
+  color: var(--color-primary);
+}
+
+input:focus, textarea:focus, select:focus,a:focus {
+  outline: none;
+  border-width:1.5px;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-accent);
+}
+
+/* Light Mode */
+a {
+  color: var(--color-foreground);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Dark Mode */
+.dark a {
+  color: var(--color-accent);
+}
+
+.dark a:hover {
+  color: var(--color-primary);
+}
+  
